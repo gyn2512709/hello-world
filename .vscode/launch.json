@@ -5,17 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Integrated Terminal/Console",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "none"
-        },
-        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "${file}"
+            "program": "${file}",
         },
         {
             "name": "Python: Attach",
@@ -32,20 +25,21 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "none"
+            "console": "none",
         },
         {
             "name": "Python: Terminal (external)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "none"
+            "console": "none",
         },
         {
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/manage.py",
+            "console": "none",
             "args": [
                 "runserver",
                 "--noreload",
@@ -61,6 +55,7 @@
             "type": "python",
             "request": "launch",
             "module": "flask",
+            "console": "none",
             "env": {
                 "FLASK_APP": "app.py"
             },
@@ -75,11 +70,13 @@
             "type": "python",
             "request": "launch",
             "module": "module.name"
+
         },
         {
             "name": "Python: Pyramid",
             "type": "python",
             "request": "launch",
+            "console": "none",
             "args": [
                 "${workspaceFolder}/development.ini"
             ],
@@ -93,6 +90,7 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/console.py",
+            "console": "none",
             "args": [
                 "dev",
                 "runserver",
@@ -106,6 +104,7 @@
             "pythonPath": "${config:python.pythonPath}",
             "program": "${file}",
             "module": "module.name",
+            "console": "none",
             "env": {
                 "VAR1": "1",
                 "VAR2": "2"
